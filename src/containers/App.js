@@ -3,6 +3,7 @@ import classes from './App.css';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
 import WithClass from '../hoc/WithClass';
+// import WithClass_ from '../hoc/WithClass_';
 import AuthContext from '../context/auth-context';
 
 
@@ -45,7 +46,7 @@ export default class App extends Component {
   {
     console.log("[App.js] componentDidUpdate");
   }
-
+  
   nameChangedHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex(p => {
       return p.id === id;
@@ -116,4 +117,4 @@ export default class App extends Component {
   }
 }
 
-// export default App;
+// export default Withclass_(App,classes.App);

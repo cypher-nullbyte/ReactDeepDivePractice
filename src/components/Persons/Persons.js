@@ -15,7 +15,7 @@ class Persons extends Component
     //in shouldComponentUpdate. Hence, in that case we need not to even define shouldComponentUpdate
 
     console.log('[Persons.js] shouldComponentUpdate');
-    //shallow comparison. Hence we should use spread operator or .slice() while using state's values in App.js :)
+    //shallow comparison. Hence we should use spread operator or .slice() while using state's values in App.js [Line 69-70] :)
     if(nextProps.persons!==this.props.persons 
       || nextProps.changed!==this.props.changed
       || nextProps.clicked!==this.props.clicked) 

@@ -13,7 +13,7 @@ const Cockpit=(props)=>
       // const timer=setTimeout(()=>{
       //   alert("Saved Data to Cloud");
       // },5000);
-      // toggleBtnRef.current.click();
+      toggleBtnRef.current.click(); 
       return ()=>{
         // clearTimeout(timer);
         console.log('[Cockpit.js] cleanup work in useEffect (similar to componentWillUnmount in Lifecycle-hooks');
@@ -51,3 +51,5 @@ const Cockpit=(props)=>
     )
 }
 export default React.memo(Cockpit);
+// React.memo() does same thing as shouldComponentUpdate in Lifecycle Hooks
+// It check if any props on which it depends change or the state change. Only then it re-renders

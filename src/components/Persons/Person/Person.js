@@ -21,7 +21,7 @@ class Person extends Component {
   {
     console.log("[Person.js] rendering...");
     return (
-      <Aux>
+      <Aux> {/* React.Fragment is an alternative */}
         <AuthContext.Consumer>
         {(context)=>context.authenticated? <p>Authenticated!</p>:<p>Please Log In!</p>}
         </AuthContext.Consumer>
